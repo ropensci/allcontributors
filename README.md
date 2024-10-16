@@ -6,7 +6,7 @@ status](https://github.com/ropensci/allcontributors/workflows/R-CMD-check/badge.
 [![codecov](https://app.codecov.io/gh/ropensci/allcontributors/branch/master/graph/badge.svg)](https://app.codecov.io/gh/ropensci/allcontributors)
 [![Project Status:
 Concept](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/allcontributors)](https://cran.r-project.org/web/packages/allcontributors/)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/allcontributors)](https://cran.r-project.org/package=allcontributors/)
 [![CRAN
 Downloads](https://cranlogs.r-pkg.org/badges/grand-total/allcontributors?color=orange)](https://cran.r-project.org/package=allcontributors)
 <!-- badges: end -->
@@ -193,7 +193,6 @@ All contributions to this project are gratefully acknowledged using the
 [`allcontributors` package](https://github.com/ropensci/allcontributors)
 following the [all-contributors](https://allcontributors.org)
 specification. Contributions of any kind are welcome!
-
 
 ### Code
 
