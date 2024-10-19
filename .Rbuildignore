@@ -1,6 +1,7 @@
 ^README\.Rmd$
 ^_pkgdown\.yml$
-^README\.md$
+^README\.html$
+^README\_files
 ^cran-comments\.md$
 ^makefile$
 ^aaa.Rmd$
