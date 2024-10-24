@@ -1,4 +1,4 @@
-# Development
+# v0.2.2
 
 ## Major changes
 
