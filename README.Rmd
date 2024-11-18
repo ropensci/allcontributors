@@ -177,13 +177,49 @@ print (dat)
 ```
 
 
-## Updating Contributor Acknowledgements
+## Keeping your allcontributors Acknowledgements up-to-date
 
-"Contributors" sections of files will be automatically updated to reflect any new
-contributions by simply calling
+The "Contributors" sections of files can be updated at any time by calling
+calling
 [`add_contributors()`](https://docs.ropensci.org/allcontributors/reference/add_contributors.html).
 If your contributors have not changed then your lists of acknowledgements will
-not be changed. The
+not be changed. The most direct way to update your allcontributors list is to
+remember to manually call that function.
+
+### A GitHub Workflow
+
+This package also includes a [GitHub workflow
+file](https://github.com/ropensci/allcontributors/blob/main/.github/workflows/allcontributors.yml)
+which you can simply copy and add to your own repository. Once pushed with your
+repository, this workflow will be automatically run at the default monthly
+interval (or whatever value you interval you wish to change that to), your
+README file updated, and the result committed to your repository. Your
+allcontributors list will then be automatically updated without you having to
+do anything.
+
+### A `usethis::use_release_issue()` check item
+
+Many people use the [`usethis::use_release_issue()`
+function](https://usethis.r-lib.org/reference/use_release_issue.html) to
+automatically open an issue on GitHub containing a checklist to help prepare
+for package releases. You can easily add an additional checklist item to this
+list by including the following function somewhere in your package code:
+
+```{r}
+release_bullets <- function () {
+    "Run `allcontributors::add_contributors()`"
+}
+```
+
+The function should return a single text item (which you can modify to suit
+your own needs), and that will be automatically added to the checklist item
+created on calling the [`usethis::use_release_issue()`
+function](https://usethis.r-lib.org/reference/use_release_issue.html).
+
+
+### Forcing updates
+
+The
 [`add_contributors()`](https://docs.ropensci.org/allcontributors/reference/add_contributors.html)
 function has an additional parameter which may be set to `force_update = TRUE`
 to force lists to be updated regardless of whether contributions have changed.
@@ -191,10 +227,8 @@ This can be used to change the formats of acknowledgements at any time. If
 anything goes wrong, the easiest way to replace a contributions section is to
 simply delete the old ones from all files, and call
 [`add_contributors()`](https://docs.ropensci.org/allcontributors/reference/add_contributors.html)
-again. This package also includes a [GitHub workflow
-file](https://github.com/ropensci/allcontributors/blob/main/.github/workflows/allcontributors.yml)
-which you can simply copy and add to your own repository, and your
-"allcontributors" section will be automatically updated at regular intervals.
+again.
+
 
 ## More Information
 
