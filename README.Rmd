@@ -211,8 +211,9 @@ release_bullets <- function () {
 }
 ```
 
-The function should return a single text item (which you can modify to suit
-your own needs), and that will be automatically added to the checklist item
+The function does not need to be exported, and should return a single text item
+(which you can modify to suit your own needs). That function will then be read
+by  `usethis` and the text within it automatically added to the checklist items
 created on calling the [`usethis::use_release_issue()`
 function](https://usethis.r-lib.org/reference/use_release_issue.html).
 
