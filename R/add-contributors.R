@@ -387,7 +387,7 @@ add_contribs_to_one_file <- function (ctbs, orgrepo, ncols, format, filename) {
             "[`allcontributors` package]",
             "(https://github.com/ropensci/allcontributors)",
             " following the ",
-            "[all-contributors](https://allcontributors.org) ",
+            "[allcontributors](https://allcontributors.org) ",
             "specification. ",
             "Contributions of any kind are welcome!"
         )

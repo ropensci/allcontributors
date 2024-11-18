@@ -12,7 +12,7 @@ Downloads](https://cranlogs.r-pkg.org/badges/grand-total/allcontributors?color=o
 <!-- badges: end -->
 
 An alternative implementation in R of the original
-[`all-contributors`](https://allcontributors.org/) to acknowledge all
+[`allcontributors.org`](https://allcontributors.org/) to acknowledge all
 contributors in your ‘README’ (or elsewhere). The original is intended
 to help acknowledge *all* contributions including those beyond the
 contents of an actual repository, such as community or other or
@@ -24,7 +24,7 @@ original does, but it makes what it does much easier.
 
 ## Why then?
 
-The original [`all-contributors`](https://allcontributors.org/) is
+The original [`allcontributors.org`](https://allcontributors.org/) is
 primarily a bot which responds to commit messages such as
 `add @user for <contribution>`, where `<contribution>` is one of the
 [recognized types](https://allcontributors.org/docs/en/emoji-key). As
