@@ -12,7 +12,7 @@ Downloads](https://cranlogs.r-pkg.org/badges/grand-total/allcontributors?color=o
 <!-- badges: end -->
 
 An alternative implementation in R of the original
-[`all-contributors`](https://allcontributors.org/) to acknowledge all
+[`allcontributors.org`](https://allcontributors.org/) to acknowledge all
 contributors in your ‘README’ (or elsewhere). The original is intended
 to help acknowledge *all* contributions including those beyond the
 contents of an actual repository, such as community or other or
@@ -24,13 +24,12 @@ original does, but it makes what it does much easier.
 
 ## Why then?
 
-The original [`all-contributors`](https://allcontributors.org/) is
+The original [`allcontributors.org`](https://allcontributors.org/) is
 primarily a bot which responds to commit messages such as
 `add @user for <contribution>`, where `<contribution>` is one of the
-[recognized types](https://allcontributors.org/docs/en/emoji-key). As
-said above, the relative advantage of that original system lies
-primarily in the diversity of contribution types able to be
-acknowledged, with each type for a given user appearing as a
+[recognized types](https://allcontributors.org/docs/en/emoji-key). One
+advantage of the original system is the diversity of contribution types
+able to be acknowledged, with each type for a given user appearing as a
 corresponding [emoji](https://allcontributors.org/docs/en/emoji-key)
 below their github avatar as listed on the README. In comparison, this R
 package:
@@ -46,6 +45,12 @@ package:
         original](https://github.com/all-contributors/all-contributors/blob/master/README.md#contributors-)),
         numbered lists of github user names only, or single text strings
         of comma-separated names.
+
+This ease of automation means you can easily update your contributors
+list with a [simple GitHub
+workflow](https://github.com/ropensci/allcontributors/blob/main/.github/workflows/allcontributors.yml),
+set to update at some regular interval. Your contributor list will then
+be kept up-to-date without you having to remember or do anything.
 
 ## Installation
 
@@ -153,13 +158,51 @@ get_contributors (org = "ropensci", repo = "allcontributors")
     #> 3 issue_authors
     #> 4 issue_authors
 
-## Updating Contributor Acknowledgements
+## Keeping your allcontributors Acknowledgements up-to-date
 
-“Contributors” sections of files will be automatically updated to
-reflect any new contributions by simply calling
+The “Contributors” sections of files can be updated at any time by
+calling calling
 [`add_contributors()`](https://docs.ropensci.org/allcontributors/reference/add_contributors.html).
 If your contributors have not changed then your lists of
-acknowledgements will not be changed. The
+acknowledgements will not be changed. The most direct way to update your
+allcontributors list is to remember to manually call that function.
+
+### A GitHub Workflow
+
+This package also includes a [GitHub workflow
+file](https://github.com/ropensci/allcontributors/blob/main/.github/workflows/allcontributors.yml)
+which you can simply copy and add to your own repository. Once pushed
+with your repository, this workflow will be automatically run at the
+default monthly interval (or whatever value you interval you wish to
+change that to), your README file updated, and the result committed to
+your repository. Your allcontributors list will then be automatically
+updated without you having to do anything.
+
+### A `usethis::use_release_issue()` check item
+
+Many people use the [`usethis::use_release_issue()`
+function](https://usethis.r-lib.org/reference/use_release_issue.html) to
+automatically open an issue on GitHub containing a checklist to help
+prepare for package releases. You can easily add an additional checklist
+item to this list by including the following function somewhere in your
+package code:
+
+``` r
+release_bullets <- function () {
+    "Run `allcontributors::add_contributors()`"
+}
+```
+
+The function does not need to be exported, and should return a single
+text item (which you can modify to suit your own needs). That function
+will then be read by `usethis` and the text within it automatically
+added to the checklist items created on calling the
+[`usethis::use_release_issue()`
+function](https://usethis.r-lib.org/reference/use_release_issue.html).
+
+### Forcing updates
+
+The
 [`add_contributors()`](https://docs.ropensci.org/allcontributors/reference/add_contributors.html)
 function has an additional parameter which may be set to
 `force_update = TRUE` to force lists to be updated regardless of whether

@@ -1,5 +1,13 @@
 # v0.2.2.00X (Current development version)
 
+## Major changes
+
+- Added a [GitHub workflow](https://github.com/ropensci/allcontributors/blob/main/.github/workflows/allcontributors.yml) to automatically run `add_contributors()`
+
+## Minor changes
+
+- Updated documentation to described different ways of keeping allcontributors lists up-to-date (#15; thanks to @maelle)
+
 ---
 
 # v0.2.2
