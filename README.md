@@ -185,18 +185,17 @@ project, you agree to abide by its terms.
 
 ## Contributors
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
-All contributions to this project are gratefully acknowledged using the
-[`allcontributors` package](https://github.com/ropensci/allcontributors)
-following the [all-contributors](https://allcontributors.org)
-specification. Contributions of any kind are welcome!
+All contributions to this project are gratefully acknowledged using the [`allcontributors` package](https://github.com/ropensci/allcontributors) following the [all-contributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
 
 ### Code
 
 <table>
+
 <tr>
 <td align="center">
 <a href="https://github.com/mpadge">
@@ -217,17 +216,26 @@ specification. Contributions of any kind are welcome!
 <a href="https://github.com/ropensci/allcontributors/commits?author=maelle">maelle</a>
 </td>
 <td align="center">
+<a href="https://github.com/milanmlft">
+<img src="https://avatars.githubusercontent.com/u/38256462?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ropensci/allcontributors/commits?author=milanmlft">milanmlft</a>
+</td>
+<td align="center">
 <a href="https://github.com/sbfnk">
 <img src="https://avatars.githubusercontent.com/u/1156307?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=sbfnk">sbfnk</a>
 </td>
 </tr>
+
 </table>
+
 
 ### Issues
 
 <table>
+
 <tr>
 <td align="center">
 <a href="https://github.com/shamindras">
@@ -242,7 +250,9 @@ specification. Contributions of any kind are welcome!
 <a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3AassignUser">assignUser</a>
 </td>
 </tr>
+
 </table>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->

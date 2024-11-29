@@ -209,6 +209,7 @@ project, you agree to abide by its terms.
 
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -237,6 +238,12 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <img src="https://avatars.githubusercontent.com/u/8360597?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=maelle">maelle</a>
+</td>
+<td align="center">
+<a href="https://github.com/milanmlft">
+<img src="https://avatars.githubusercontent.com/u/38256462?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ropensci/allcontributors/commits?author=milanmlft">milanmlft</a>
 </td>
 <td align="center">
 <a href="https://github.com/sbfnk">
