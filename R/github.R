@@ -33,7 +33,7 @@ get_contributors <- function (org, repo,
         repo,
         alphabetical = alphabetical
     )
-    ctb_code <- ctb_code [which (!is.na (ctb_code$login)), ]
+    ctb_code <- ctb_code [which (!is.na (ctb_code$logins)), ]
     ctb_code$type <- "code"
     if (!quiet) {
         message (
@@ -59,12 +59,12 @@ get_contributors <- function (org, repo,
             exclude_not_planned = exclude_not_planned
         )
 
-        index <- which (!ctb_issues$authors$login %in% ctb_code$logins)
+        index <- which (!ctb_issues$authors$logins %in% ctb_code$logins)
         ctb_issues$authors <- ctb_issues$authors [index, ]
 
         index <- which (
-            !ctb_issues$contributors$login %in%
-                c (ctb_code$logins, ctb_issues$authors$login)
+            !ctb_issues$contributors$logins %in%
+                c (ctb_code$logins, ctb_issues$authors$logins)
         )
         ctb_issues$contributors <- ctb_issues$contributors [index, ]
 
