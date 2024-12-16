@@ -137,7 +137,7 @@ get_gh_code_contributors <- function (org, repo, alphabetical = FALSE) {
     )
 
     if (alphabetical) {
-        out [order (res$login), ]
+        out [order (out$logins), ]
     } else {
         out
     }
