@@ -186,11 +186,12 @@ project, you agree to abide by its terms.
 ## Contributors
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
-All contributions to this project are gratefully acknowledged using the [`allcontributors` package](https://github.com/ropensci/allcontributors) following the [all-contributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
+All contributions to this project are gratefully acknowledged using the [`allcontributors` package](https://github.com/ropensci/allcontributors) following the [allcontributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
 
 ### Code
 
@@ -214,6 +215,12 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <img src="https://avatars.githubusercontent.com/u/8360597?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=maelle">maelle</a>
+</td>
+<td align="center">
+<a href="https://github.com/iantaylor-NOAA">
+<img src="https://avatars.githubusercontent.com/u/4992918?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ropensci/allcontributors/commits?author=iantaylor-NOAA">iantaylor-NOAA</a>
 </td>
 <td align="center">
 <a href="https://github.com/milanmlft">
@@ -248,6 +255,12 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <img src="https://avatars.githubusercontent.com/u/16141871?u=b8095df6a10813031922a72335bd6579d5494c16&v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3AassignUser">assignUser</a>
+</td>
+<td align="center">
+<a href="https://github.com/RichardLitt">
+<img src="https://avatars.githubusercontent.com/u/910753?u=a638615a7167b368f0c102aa2047cef15b0ce9cc&v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3ARichardLitt">RichardLitt</a>
 </td>
 </tr>
 
