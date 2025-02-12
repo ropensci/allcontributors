@@ -5,6 +5,8 @@
 #' @param org Github organisation name for repository
 #' @param repo Repository within `org` for which contributors are to be
 #' extracted
+#' @param rm_ctbs_ptn Remove contributors which match this pattern (such as
+#' "actions-bot", or "ropensci-review-bot").
 #' @param quiet If `FALSE`, display progress information on screen.
 #' @inheritParams add_contributors
 #'
@@ -20,6 +22,7 @@ get_contributors <- function (org, repo,
                               exclude_issues = NULL,
                               exclude_not_planned = TRUE,
                               alphabetical = FALSE,
+                              rm_ctbs_ptn = "\\-bot$",
                               check_urls = TRUE,
                               quiet = FALSE) {
 
@@ -96,6 +99,7 @@ get_contributors <- function (org, repo,
     }
 
     ctbs <- rbind (ctb_code, issue_authors, issue_contributors)
+    ctbs <- ctbs [which (!grepl (ctbs_ptn, ctbs$logins)), ]
 
     if (check_urls) {
         ctbs <- check_github_urls (ctbs, quiet = quiet)

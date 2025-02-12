@@ -7,6 +7,7 @@
 ## Minor changes
 
 - Updated documentation to described different ways of keeping allcontributors lists up-to-date (#15; thanks to @maelle)
+- Remove any "-bot" contributors from list ("actions-bot", "ropensci-review-bot", and similar)
 
 ---
 
