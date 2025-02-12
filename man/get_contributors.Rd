@@ -12,6 +12,7 @@ get_contributors(
   exclude_issues = NULL,
   exclude_not_planned = TRUE,
   alphabetical = FALSE,
+  rm_ctbs_ptn = "\\\\-bot$",
   check_urls = TRUE,
   quiet = FALSE
 )
@@ -41,6 +42,9 @@ issues closed as "not planned".}
 
 \item{alphabetical}{If \code{TRUE}, order contributors alphabetically, otherwise
 order by decreasing numbers of contributions.}
+
+\item{rm_ctbs_ptn}{Remove contributors which match this pattern (such as
+"actions-bot", or "ropensci-review-bot").}
 
 \item{check_urls}{If \code{TRUE} (default), GitHub URLs of all contributors are
 checked to ensure they are still valid. (This is generally the most

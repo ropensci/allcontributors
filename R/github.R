@@ -99,7 +99,7 @@ get_contributors <- function (org, repo,
     }
 
     ctbs <- rbind (ctb_code, issue_authors, issue_contributors)
-    ctbs <- ctbs [which (!grepl (ctbs_ptn, ctbs$logins)), ]
+    ctbs <- ctbs [which (!grepl (rm_ctbs_ptn, ctbs$logins)), ]
 
     if (check_urls) {
         ctbs <- check_github_urls (ctbs, quiet = quiet)
