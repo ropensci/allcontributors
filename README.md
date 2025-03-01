@@ -187,6 +187,7 @@ project, you agree to abide by its terms.
 
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -221,6 +222,12 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <img src="https://avatars.githubusercontent.com/u/4992918?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=iantaylor-NOAA">iantaylor-NOAA</a>
+</td>
+<td align="center">
+<a href="https://github.com/maurolepore">
+<img src="https://avatars.githubusercontent.com/u/5856545?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ropensci/allcontributors/commits?author=maurolepore">maurolepore</a>
 </td>
 <td align="center">
 <a href="https://github.com/milanmlft">
@@ -269,3 +276,4 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
