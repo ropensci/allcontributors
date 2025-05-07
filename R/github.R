@@ -22,7 +22,7 @@ get_contributors <- function (org, repo,
                               exclude_issues = NULL,
                               exclude_not_planned = TRUE,
                               alphabetical = FALSE,
-                              rm_ctbs_ptn = "\\-bot$",
+                              rm_ctbs_ptn = "\\-(bot|actions)$",
                               check_urls = TRUE,
                               quiet = FALSE) {
 
