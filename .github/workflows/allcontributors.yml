@@ -7,7 +7,7 @@ on:
     # - cron:  '0 12 * * 0' # weekly on Sunday at 12:00
     - cron:  '0 12 1 * *' # monthly on day 1 at 12:00
 
-name: Update allcontributoes
+name: Update allcontributors
 
 jobs:
 
