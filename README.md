@@ -197,6 +197,7 @@ project, you agree to abide by its terms.
 
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -245,6 +246,16 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <a href="https://github.com/ropensci/allcontributors/commits?author=milanmlft">milanmlft</a>
 </td>
 <td align="center">
+<a href="https://github.com/SaranjeetKaur">
+<img src="https://avatars.githubusercontent.com/u/28556616?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ropensci/allcontributors/commits?author=SaranjeetKaur">SaranjeetKaur</a>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
 <a href="https://github.com/sbfnk">
 <img src="https://avatars.githubusercontent.com/u/1156307?v=4" width="100px;" alt=""/>
 </a><br>
@@ -285,4 +296,3 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
