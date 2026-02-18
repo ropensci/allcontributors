@@ -11,7 +11,6 @@
 ^\.github$
 ^codemeta\.json$
 ^\.pre-commit-config\.yaml$
-.ropensci-staff
 ^\.hooks$
 ^inst/precommit$
 ^inst/WORDLIST$
