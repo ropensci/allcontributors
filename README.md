@@ -198,6 +198,7 @@ project, you agree to abide by its terms.
 
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -289,6 +290,12 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3ARichardLitt">RichardLitt</a>
 </td>
+<td align="center">
+<a href="https://github.com/kellijohnson-NOAA">
+<img src="https://avatars.githubusercontent.com/u/4108564?u=503d9aecc5fadf069c75e493e5abf72c7537b06f&v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3Akellijohnson-NOAA">kellijohnson-NOAA</a>
+</td>
 </tr>
 
 </table>
@@ -296,3 +303,4 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
