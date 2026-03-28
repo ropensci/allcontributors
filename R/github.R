@@ -99,7 +99,13 @@ get_contributors <- function (org, repo,
     }
 
     ctbs <- rbind (ctb_code, issue_authors, issue_contributors)
-    ctbs <- ctbs [which (!grepl (rm_ctbs_ptn, ctbs$logins)), ]
+    index <- c (
+        grep (rm_ctbs_ptn, ctbs$login),
+        which (ctbs$login == "ghost") # #58
+    )
+    if (length (index) > 0L) {
+        ctbs <- ctbs [-(index), ]
+    }
 
     if (check_urls) {
         ctbs <- check_github_urls (ctbs, quiet = quiet)

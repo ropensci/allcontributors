@@ -7,7 +7,7 @@ testthat::skip_if (!test_all)
 
 test_that ("get_contributors", {
 
-    x <- with_mock_dir ("getcontribs", {
+    x <- httptest2::with_mock_dir ("getcontribs", {
         get_contributors (org = "hypertidy", repo = "geodist")
     })
 
