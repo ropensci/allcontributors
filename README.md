@@ -46,7 +46,7 @@ package:
     1)  divided into sections by types of contributions, or as a single
         section
     2)  presented as full grids (like [the
-        original](https://github.com/all-contributors/all-contributors/blob/master/README.md#contributors-)),
+        original](https://github.com/all-contributors/allcontributors.org/blob/master/README.md)),
         numbered lists of github user names only, or single text strings
         of comma-separated names.
 
@@ -111,7 +111,7 @@ in that function, including:
     to be acknowledged.
 3.  `format` Determining whether contributors are presented in a grid
     with associated avatars of each contributor, as in [the
-    original](https://github.com/all-contributors/all-contributors/blob/master/README.md#contributors-),
+    original](https://github.com/all-contributors/allcontributors.org/blob/master/README.md),
     an enumerated list of github user names only, or a single text
     string of comma-separated names.
 

@@ -1,4 +1,4 @@
-# v0.2.2.00X (Current development version)
+# v0.2.3
 
 ## Major changes
 
