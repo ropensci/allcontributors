@@ -90,7 +90,7 @@ add_contributors <- function (repo = ".",
     all_repos <- do.call (rbind, lapply (repo, function (rep) {
 
         get_contributors_one_repo (
-            repo = rep,
+            repo = repo,
             type = type,
             exclude_label = exclude_label,
             exclude_issues = exclude_issues,

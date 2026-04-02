@@ -5,6 +5,8 @@
 #' @param org Github organisation name for repository
 #' @param repo Repository within `org` for which contributors are to be
 #' extracted
+#' @param rm_ctbs_ptn Remove contributors which match this pattern (such as
+#' "actions-bot", or "ropensci-review-bot").
 #' @param quiet If `FALSE`, display progress information on screen.
 #' @inheritParams add_contributors
 #'
@@ -20,6 +22,7 @@ get_contributors <- function (org, repo,
                               exclude_issues = NULL,
                               exclude_not_planned = TRUE,
                               alphabetical = FALSE,
+                              rm_ctbs_ptn = "\\-(bot|actions)$",
                               check_urls = TRUE,
                               quiet = FALSE) {
 
@@ -33,7 +36,7 @@ get_contributors <- function (org, repo,
         repo,
         alphabetical = alphabetical
     )
-    ctb_code <- ctb_code [which (!is.na (ctb_code$login)), ]
+    ctb_code <- ctb_code [which (!is.na (ctb_code$logins)), ]
     ctb_code$type <- "code"
     if (!quiet) {
         message (
@@ -59,12 +62,12 @@ get_contributors <- function (org, repo,
             exclude_not_planned = exclude_not_planned
         )
 
-        index <- which (!ctb_issues$authors$login %in% ctb_code$logins)
+        index <- which (!ctb_issues$authors$logins %in% ctb_code$logins)
         ctb_issues$authors <- ctb_issues$authors [index, ]
 
         index <- which (
-            !ctb_issues$contributors$login %in%
-                c (ctb_code$logins, ctb_issues$authors$login)
+            !ctb_issues$contributors$logins %in%
+                c (ctb_code$logins, ctb_issues$authors$logins)
         )
         ctb_issues$contributors <- ctb_issues$contributors [index, ]
 
@@ -96,6 +99,13 @@ get_contributors <- function (org, repo,
     }
 
     ctbs <- rbind (ctb_code, issue_authors, issue_contributors)
+    index <- c (
+        grep (rm_ctbs_ptn, ctbs$login),
+        which (ctbs$login == "ghost") # #58
+    )
+    if (length (index) > 0L) {
+        ctbs <- ctbs [-(index), ]
+    }
 
     if (check_urls) {
         ctbs <- check_github_urls (ctbs, quiet = quiet)
@@ -137,7 +147,7 @@ get_gh_code_contributors <- function (org, repo, alphabetical = FALSE) {
     )
 
     if (alphabetical) {
-        out [order (res$login), ]
+        out [order (out$logins), ]
     } else {
         out
     }

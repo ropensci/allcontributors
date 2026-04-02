@@ -4,7 +4,7 @@
             "issues": {
                 "pageInfo": {
                     "hasNextPage": false,
-                    "endCursor": "Y3Vyc29yOnYyOpK5MjAyMy0wOC0yMVQxMToyMDozMiswMjowMM5uzX-t"
+                    "endCursor": "Y3Vyc29yOnYyOpK5MjAyNS0wMy0yNFQxMDowMzo0NiswMTowMM6vY0vI"
                 },
                 "edges": [
                     {
@@ -377,12 +377,12 @@
 
                                 ]
                             },
-                            "stateReason": null,
+                            "stateReason": "COMPLETED",
                             "url": "https://github.com/hypertidy/geodist/issues/11",
                             "participants": {
                                 "pageInfo": {
                                     "hasNextPage": false,
-                                    "endCursor": "Mg"
+                                    "endCursor": "Mw"
                                 },
                                 "edges": [
                                     {
@@ -395,6 +395,12 @@
                                         "node": {
                                             "login": "mpadge",
                                             "avatarUrl": "https://avatars.githubusercontent.com/u/6697851?u=0f8c9fc5b04de2485164e2cde5b62d45b4e684a0&v=4"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "login": "kadyb",
+                                            "avatarUrl": "https://avatars.githubusercontent.com/u/35004826?u=dcf17deb757e4972f25196a557f5f1be816080d9&v=4"
                                         }
                                     }
                                 ]
@@ -1057,7 +1063,7 @@
                             "createdAt": "2020-06-30T19:55:43Z",
                             "author": {
                                 "login": "espinielli",
-                                "avatarUrl": "https://avatars.githubusercontent.com/u/891692?v=4"
+                                "avatarUrl": "https://avatars.githubusercontent.com/u/891692?u=f6403f5f76df8692fb0caa7febef83d6dda06ca2&v=4"
                             },
                             "title": "meters instead of metres",
                             "labels": {
@@ -1076,7 +1082,7 @@
                                     {
                                         "node": {
                                             "login": "espinielli",
-                                            "avatarUrl": "https://avatars.githubusercontent.com/u/891692?v=4"
+                                            "avatarUrl": "https://avatars.githubusercontent.com/u/891692?u=f6403f5f76df8692fb0caa7febef83d6dda06ca2&v=4"
                                         }
                                     },
                                     {
@@ -1316,6 +1322,120 @@
                             },
                             "stateReason": "COMPLETED",
                             "url": "https://github.com/hypertidy/geodist/issues/37",
+                            "participants": {
+                                "pageInfo": {
+                                    "hasNextPage": false,
+                                    "endCursor": "MQ"
+                                },
+                                "edges": [
+                                    {
+                                        "node": {
+                                            "login": "mpadge",
+                                            "avatarUrl": "https://avatars.githubusercontent.com/u/6697851?u=0f8c9fc5b04de2485164e2cde5b62d45b4e684a0&v=4"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "node": {
+                            "number": 40,
+                            "createdAt": "2024-11-24T03:50:36Z",
+                            "author": {
+                                "login": "mdsumner",
+                                "avatarUrl": "https://avatars.githubusercontent.com/u/4107631?u=77e928f4bb904a5c2e8927a02194b86662408329&v=4"
+                            },
+                            "title": "Rendered doc is stale ",
+                            "labels": {
+                                "edges": [
+
+                                ]
+                            },
+                            "stateReason": "COMPLETED",
+                            "url": "https://github.com/hypertidy/geodist/issues/40",
+                            "participants": {
+                                "pageInfo": {
+                                    "hasNextPage": false,
+                                    "endCursor": "Mw"
+                                },
+                                "edges": [
+                                    {
+                                        "node": {
+                                            "login": "mdsumner",
+                                            "avatarUrl": "https://avatars.githubusercontent.com/u/4107631?u=77e928f4bb904a5c2e8927a02194b86662408329&v=4"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "login": "mpadge",
+                                            "avatarUrl": "https://avatars.githubusercontent.com/u/6697851?u=0f8c9fc5b04de2485164e2cde5b62d45b4e684a0&v=4"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "login": "kadyb",
+                                            "avatarUrl": "https://avatars.githubusercontent.com/u/35004826?u=dcf17deb757e4972f25196a557f5f1be816080d9&v=4"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "node": {
+                            "number": 41,
+                            "createdAt": "2024-11-25T09:27:16Z",
+                            "author": {
+                                "login": "mpadge",
+                                "avatarUrl": "https://avatars.githubusercontent.com/u/6697851?u=0f8c9fc5b04de2485164e2cde5b62d45b4e684a0&v=4"
+                            },
+                            "title": "Add codecov token for tests",
+                            "labels": {
+                                "edges": [
+
+                                ]
+                            },
+                            "stateReason": null,
+                            "url": "https://github.com/hypertidy/geodist/issues/41",
+                            "participants": {
+                                "pageInfo": {
+                                    "hasNextPage": false,
+                                    "endCursor": "Mg"
+                                },
+                                "edges": [
+                                    {
+                                        "node": {
+                                            "login": "mdsumner",
+                                            "avatarUrl": "https://avatars.githubusercontent.com/u/4107631?u=77e928f4bb904a5c2e8927a02194b86662408329&v=4"
+                                        }
+                                    },
+                                    {
+                                        "node": {
+                                            "login": "mpadge",
+                                            "avatarUrl": "https://avatars.githubusercontent.com/u/6697851?u=0f8c9fc5b04de2485164e2cde5b62d45b4e684a0&v=4"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "node": {
+                            "number": 45,
+                            "createdAt": "2025-03-24T09:03:46Z",
+                            "author": {
+                                "login": "mpadge",
+                                "avatarUrl": "https://avatars.githubusercontent.com/u/6697851?u=0f8c9fc5b04de2485164e2cde5b62d45b4e684a0&v=4"
+                            },
+                            "title": "CRAN warning",
+                            "labels": {
+                                "edges": [
+
+                                ]
+                            },
+                            "stateReason": "COMPLETED",
+                            "url": "https://github.com/hypertidy/geodist/issues/45",
                             "participants": {
                                 "pageInfo": {
                                     "hasNextPage": false,

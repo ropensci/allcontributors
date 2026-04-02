@@ -17,8 +17,31 @@
         "events_url": "gh-api/users/mpadge/events{/privacy}",
         "received_events_url": "gh-api/users/mpadge/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false,
-        "contributions": 225
+        "contributions": 250
+    },
+    {
+        "login": "jlacko",
+        "id": 29260421,
+        "node_id": "MDQ6VXNlcjI5MjYwNDIx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29260421?v=4",
+        "gravatar_id": "",
+        "url": "gh-api/users/jlacko",
+        "html_url": "https://github.com/jlacko",
+        "followers_url": "gh-api/users/jlacko/followers",
+        "following_url": "gh-api/users/jlacko/following{/other_user}",
+        "gists_url": "gh-api/users/jlacko/gists{/gist_id}",
+        "starred_url": "gh-api/users/jlacko/starred{/owner}{/repo}",
+        "subscriptions_url": "gh-api/users/jlacko/subscriptions",
+        "organizations_url": "gh-api/users/jlacko/orgs",
+        "repos_url": "gh-api/users/jlacko/repos",
+        "events_url": "gh-api/users/jlacko/events{/privacy}",
+        "received_events_url": "gh-api/users/jlacko/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false,
+        "contributions": 3
     },
     {
         "login": "mdsumner",
@@ -38,6 +61,7 @@
         "events_url": "gh-api/users/mdsumner/events{/privacy}",
         "received_events_url": "gh-api/users/mdsumner/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false,
         "contributions": 2
     },
@@ -59,6 +83,29 @@
         "events_url": "gh-api/users/daniellemccool/events{/privacy}",
         "received_events_url": "gh-api/users/daniellemccool/received_events",
         "type": "User",
+        "user_view_type": "public",
+        "site_admin": false,
+        "contributions": 1
+    },
+    {
+        "login": "kadyb",
+        "id": 35004826,
+        "node_id": "MDQ6VXNlcjM1MDA0ODI2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35004826?v=4",
+        "gravatar_id": "",
+        "url": "gh-api/users/kadyb",
+        "html_url": "https://github.com/kadyb",
+        "followers_url": "gh-api/users/kadyb/followers",
+        "following_url": "gh-api/users/kadyb/following{/other_user}",
+        "gists_url": "gh-api/users/kadyb/gists{/gist_id}",
+        "starred_url": "gh-api/users/kadyb/starred{/owner}{/repo}",
+        "subscriptions_url": "gh-api/users/kadyb/subscriptions",
+        "organizations_url": "gh-api/users/kadyb/orgs",
+        "repos_url": "gh-api/users/kadyb/repos",
+        "events_url": "gh-api/users/kadyb/events{/privacy}",
+        "received_events_url": "gh-api/users/kadyb/received_events",
+        "type": "User",
+        "user_view_type": "public",
         "site_admin": false,
         "contributions": 1
     },
@@ -80,6 +127,7 @@
         "events_url": "gh-api/users/olivroy/events{/privacy}",
         "received_events_url": "gh-api/users/olivroy/received_events",
         "type": "User",
+        "user_view_type": "public",
         "site_admin": false,
         "contributions": 1
     }
