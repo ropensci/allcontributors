@@ -9,7 +9,7 @@ knith: $(RFILE).Rmd ## Render README as HTML
 	echo "rmarkdown::render('$(RFILE).Rmd',output_file='$(RFILE).html')" | R --no-save -q
 
 knitr: $(RFILE).Rmd ## Render README as markdown
-	echo "rmarkdown::render('$(RFILE).Rmd',output_file='$(RFILE).md')" | R --no-save -q
+	echo "rmarkdown::render('$(RFILE).Rmd',output_file='$(RFILE).md',output_format='github_document')" | R --no-save -q
 
 allcon: ## Run 'allcontributors::add_contributors'
 	Rscript -e 'allcontributors::add_contributors()'

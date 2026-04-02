@@ -95,7 +95,7 @@ The `install.packages()` command will then install the development version.
 Alternatively, any of the following options may be used for those who prefer
 not to use GitHub:
 
-```{r gh-installation, eval = FALSE}
+```{r gh-installation, eval = FALSE, collapse = TRUE}
 # install.packages("remotes")
 remotes::install_git ("https://git.sr.ht/~ropensci/allcontributors")
 remotes::install_git ("https://codeberg.org/mpadge/allcontributors")
