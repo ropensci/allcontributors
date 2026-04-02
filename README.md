@@ -1,7 +1,9 @@
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-<!-- badges: start -->
+allcontributors
+================
 
-# allcontributors
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+<!-- badges: start -->
 
 [![R build
 status](https://github.com/ropensci/allcontributors/workflows/R-CMD-check/badge.svg)](https://github.com/ropensci/allcontributors/actions?query=workflow%3AR-CMD-check)
@@ -14,7 +16,7 @@ Downloads](https://cranlogs.r-pkg.org/badges/grand-total/allcontributors?color=o
 <!-- badges: end -->
 
 An alternative implementation in R of the original
-[`all-contributors`](https://allcontributors.org/) to acknowledge all
+[`allcontributors.org`](https://allcontributors.org/) to acknowledge all
 contributors in your ‘README’ (or elsewhere). The original is intended
 to help acknowledge *all* contributions including those beyond the
 contents of an actual repository, such as community or other or
@@ -26,13 +28,12 @@ original does, but it makes what it does much easier.
 
 ## Why then?
 
-The original [`all-contributors`](https://allcontributors.org/) is
+The original [`allcontributors.org`](https://allcontributors.org/) is
 primarily a bot which responds to commit messages such as
 `add @user for <contribution>`, where `<contribution>` is one of the
-[recognized types](https://allcontributors.org/docs/en/emoji-key). As
-said above, the relative advantage of that original system lies
-primarily in the diversity of contribution types able to be
-acknowledged, with each type for a given user appearing as a
+[recognized types](https://allcontributors.org/docs/en/emoji-key). One
+advantage of the original system is the diversity of contribution types
+able to be acknowledged, with each type for a given user appearing as a
 corresponding [emoji](https://allcontributors.org/docs/en/emoji-key)
 below their github avatar as listed on the README. In comparison, this R
 package:
@@ -49,6 +50,12 @@ package:
         numbered lists of github user names only, or single text strings
         of comma-separated names.
 
+This ease of automation means you can easily update your contributors
+list with a [simple GitHub
+workflow](https://github.com/ropensci/allcontributors/blob/main/.github/workflows/allcontributors.yml),
+set to update at some regular interval. Your contributor list will then
+be kept up-to-date without you having to remember or do anything.
+
 ## Installation
 
 The package is on CRAN, and can be installed with,
@@ -62,29 +69,22 @@ Alternatively, a development version can be installed by enabling the
 [r-universe](https://ropensci.r-universe.dev):
 
 ``` r
-install.packages('allcontributors', repos = c('https://packages.ropensci.org', 'https://cloud.r-project.org'))
+options (repos = c (
+    ropensci = "https://ropensci.r-universe.dev",
+    CRAN = "https://cloud.r-project.org"
+))
 ```
-Alternatively, any of the following options may be used for
+
+The `install.packages()` command will then install the development
+version. Alternatively, any of the following options may be used for
 those who prefer not to use GitHub:
 
 ``` r
 # install.packages("remotes")
 remotes::install_git ("https://git.sr.ht/~ropensci/allcontributors")
-```
-
-``` r
 remotes::install_git ("https://codeberg.org/mpadge/allcontributors")
-```
-
-``` r
 remotes::install_bitbucket ("mpadge/allcontributors")
-```
-
-``` r
 remotes::install_gitlab ("mpadge/allcontributors")
-```
-
-``` r
 remotes::install_github ("mpadge/allcontributors")
 ```
 
@@ -162,13 +162,51 @@ get_contributors (org = "ropensci", repo = "allcontributors")
     #> 3 issue_authors
     #> 4 issue_authors
 
-## Updating Contributor Acknowledgements
+## Keeping your allcontributors Acknowledgements up-to-date
 
-“Contributors” sections of files will be automatically updated to
-reflect any new contributions by simply calling
+The “Contributors” sections of files can be updated at any time by
+calling calling
 [`add_contributors()`](https://docs.ropensci.org/allcontributors/reference/add_contributors.html).
 If your contributors have not changed then your lists of
-acknowledgements will not be changed. The
+acknowledgements will not be changed. The most direct way to update your
+allcontributors list is to remember to manually call that function.
+
+### A GitHub Workflow
+
+This package also includes a [GitHub workflow
+file](https://github.com/ropensci/allcontributors/blob/main/.github/workflows/allcontributors.yml)
+which you can simply copy and add to your own repository. Once pushed
+with your repository, this workflow will be automatically run at the
+default monthly interval (or whatever value you interval you wish to
+change that to), your README file updated, and the result committed to
+your repository. Your allcontributors list will then be automatically
+updated without you having to do anything.
+
+### A `usethis::use_release_issue()` check item
+
+Many people use the [`usethis::use_release_issue()`
+function](https://usethis.r-lib.org/reference/use_release_issue.html) to
+automatically open an issue on GitHub containing a checklist to help
+prepare for package releases. You can easily add an additional checklist
+item to this list by including the following function somewhere in your
+package code:
+
+``` r
+release_bullets <- function () {
+    "Run `allcontributors::add_contributors()`"
+}
+```
+
+The function does not need to be exported, and should return a single
+text item (which you can modify to suit your own needs). That function
+will then be read by `usethis` and the text within it automatically
+added to the checklist items created on calling the
+[`usethis::use_release_issue()`
+function](https://usethis.r-lib.org/reference/use_release_issue.html).
+
+### Forcing updates
+
+The
 [`add_contributors()`](https://docs.ropensci.org/allcontributors/reference/add_contributors.html)
 function has an additional parameter which may be set to
 `force_update = TRUE` to force lists to be updated regardless of whether
@@ -194,113 +232,139 @@ project, you agree to abide by its terms.
 
 ## Contributors
 
-
-
-
-
-
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 <!-- prettier-ignore-start -->
+
 <!-- markdownlint-disable -->
 
-All contributions to this project are gratefully acknowledged using the [`allcontributors` package](https://github.com/ropensci/allcontributors) following the [allcontributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
+All contributions to this project are gratefully acknowledged using the
+[`allcontributors` package](https://github.com/ropensci/allcontributors)
+following the [allcontributors](https://allcontributors.org)
+specification. Contributions of any kind are welcome!
 
 ### Code
 
 <table>
 
 <tr>
+
 <td align="center">
+
 <a href="https://github.com/mpadge">
 <img src="https://avatars.githubusercontent.com/u/6697851?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=mpadge">mpadge</a>
 </td>
+
 <td align="center">
+
 <a href="https://github.com/chartgerink">
 <img src="https://avatars.githubusercontent.com/u/2946344?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=chartgerink">chartgerink</a>
 </td>
+
 <td align="center">
+
 <a href="https://github.com/maelle">
 <img src="https://avatars.githubusercontent.com/u/8360597?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=maelle">maelle</a>
 </td>
+
 <td align="center">
+
 <a href="https://github.com/iantaylor-NOAA">
 <img src="https://avatars.githubusercontent.com/u/4992918?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=iantaylor-NOAA">iantaylor-NOAA</a>
 </td>
+
 <td align="center">
+
 <a href="https://github.com/maurolepore">
 <img src="https://avatars.githubusercontent.com/u/5856545?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=maurolepore">maurolepore</a>
 </td>
+
 <td align="center">
+
 <a href="https://github.com/milanmlft">
 <img src="https://avatars.githubusercontent.com/u/38256462?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=milanmlft">milanmlft</a>
 </td>
+
 <td align="center">
+
 <a href="https://github.com/SaranjeetKaur">
 <img src="https://avatars.githubusercontent.com/u/28556616?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=SaranjeetKaur">SaranjeetKaur</a>
 </td>
+
 </tr>
 
-
 <tr>
+
 <td align="center">
+
 <a href="https://github.com/sbfnk">
 <img src="https://avatars.githubusercontent.com/u/1156307?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/commits?author=sbfnk">sbfnk</a>
 </td>
+
 </tr>
 
 </table>
-
 
 ### Issues
 
 <table>
 
 <tr>
+
 <td align="center">
+
 <a href="https://github.com/shamindras">
 <img src="https://avatars.githubusercontent.com/u/7627188?u=d05fb551796e6ce6db64ae43cd8ce48a0217ef85&v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3Ashamindras">shamindras</a>
 </td>
+
 <td align="center">
+
 <a href="https://github.com/assignUser">
 <img src="https://avatars.githubusercontent.com/u/16141871?u=b8095df6a10813031922a72335bd6579d5494c16&v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3AassignUser">assignUser</a>
 </td>
+
 <td align="center">
+
 <a href="https://github.com/RichardLitt">
 <img src="https://avatars.githubusercontent.com/u/910753?u=a638615a7167b368f0c102aa2047cef15b0ce9cc&v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3ARichardLitt">RichardLitt</a>
 </td>
+
 <td align="center">
+
 <a href="https://github.com/kellijohnson-NOAA">
 <img src="https://avatars.githubusercontent.com/u/4108564?u=503d9aecc5fadf069c75e493e5abf72c7537b06f&v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3Akellijohnson-NOAA">kellijohnson-NOAA</a>
 </td>
+
 </tr>
 
 </table>
 
 <!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
