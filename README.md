@@ -351,6 +351,14 @@ specification. Contributions of any kind are welcome!
 <a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3ARichardLitt">RichardLitt</a>
 </td>
 
+<td align="center">
+
+<a href="https://github.com/kellijohnson-NOAA">
+<img src="https://avatars.githubusercontent.com/u/4108564?u=503d9aecc5fadf069c75e493e5abf72c7537b06f&v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ropensci/allcontributors/issues?q=is%3Aissue+author%3Akellijohnson-NOAA">kellijohnson-NOAA</a>
+</td>
+
 </tr>
 
 </table>
