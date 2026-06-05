@@ -16,6 +16,34 @@ has_contribs_sec <- function (x) {
     return (has_contribs_sec)
 }
 
+#' Trim empty strings from one end of a character vector.
+#'
+#' Removes any empty ("") strings from either the start or the end of `x`,
+#' leaving any empty strings in the interior untouched.
+#'
+#' @param x A character vector.
+#' @param start If `TRUE`, trim empty strings from the start of `x`; otherwise
+#' trim them from the end.
+#' @return `x` with leading or trailing empty strings removed. If every element
+#' is empty, a zero-length vector is returned.
+#' @noRd
+trim_nzchar <- function (x, start = TRUE) {
+
+    # Positions of the non-empty elements; if there are none, drop everything.
+    nz <- which (nzchar (x))
+    if (length (nz) == 0L) {
+        return (x [0])
+    }
+
+    if (start) {
+        # Keep from the first non-empty element (trimming the start)
+        x [seq (min (nz), length (x))]
+    } else {
+        # Keep up to last non-empty element (trimming the end)
+        x [seq_len (max (nz))]
+    }
+}
+
 #' Determine whether markdown sections are single-line hash-format, or two-line
 #' ["title", "---"]-format.
 #' @inheritParams has_contribs_sec

@@ -357,6 +357,11 @@ add_contribs_to_one_file <- function (ctbs, orgrepo, ncols, format, filename) {
         }
     }
 
+    # Drop blank lines directly adjoining the list. This prevents those blanks
+    # accumulating each time `add_contributors()` re-reads its own output.
+    xtop <- trim_nzchar (xtop, start = FALSE)
+    xbottom <- trim_nzchar (xbottom, start = TRUE)
+
     xmid <- NULL
     if (!has_contribs_sec (x)) {
         sec_fmt <- section_format (x)
@@ -368,7 +373,7 @@ add_contribs_to_one_file <- function (ctbs, orgrepo, ncols, format, filename) {
                 paste0 (rep ("-", sec_fmt), collapse = "")
             )
         }
-        xmid <- c ("", xmid, "")
+        xmid <- c ("", xmid)
     }
 
     xmid <- c (
@@ -378,7 +383,9 @@ add_contribs_to_one_file <- function (ctbs, orgrepo, ncols, format, filename) {
             "<!-- ALL-CONTRIBUTORS-LIST:START - ",
             "Do not remove or modify this section -->"
         ),
+        "",
         "<!-- prettier-ignore-start -->",
+        "",
         "<!-- markdownlint-disable -->",
         "",
         paste0 (
@@ -418,15 +425,16 @@ add_contribs_to_one_file <- function (ctbs, orgrepo, ncols, format, filename) {
 
     xmid <- c (
         xmid, "<!-- markdownlint-enable -->",
+        "",
         "<!-- prettier-ignore-end -->",
+        "",
         "<!-- ALL-CONTRIBUTORS-LIST:END -->",
         ""
     )
 
     txt <- c (xtop, xmid, xbottom)
 
-    newlines <- txt [which (!txt %in% x)]
-    changed <- any (nchar (newlines) > 0)
+    changed <- !identical (txt, x)
 
     if (changed) {
         con <- file (filename, "w")
