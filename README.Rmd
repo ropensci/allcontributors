@@ -25,9 +25,8 @@ knitr::opts_chunk$set (
 
 <!-- badges: start -->
 
-[![R build
-status](https://github.com/ropensci/allcontributors/workflows/R-CMD-check/badge.svg)](https://github.com/ropensci/allcontributors/actions?query=workflow%3AR-CMD-check)
-[![codecov](https://app.codecov.io/gh/ropensci/allcontributors/branch/master/graph/badge.svg)](https://app.codecov.io/gh/ropensci/allcontributors)
+[![R-CMD-check](https://github.com/ropensci/allcontributors/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci/allcontributors/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/ropensci/allcontributors/graph/badge.svg)](https://app.codecov.io/gh/ropensci/allcontributors)
 [![Project Status:
 Concept](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/allcontributors)](https://cran.r-project.org/package=allcontributors/) 
