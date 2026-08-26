@@ -62,7 +62,7 @@ get_contributors (org = "ropensci", repo = "allcontributors")
 }
 }
 \seealso{
-Other main: 
-\code{\link{add_contributors}()}
+Other main:
+\code{\link[=add_contributors]{add_contributors()}}
 }
 \concept{main}

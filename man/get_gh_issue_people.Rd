@@ -42,9 +42,9 @@ get_gh_issue_people (org = "ropensci", repo = "allcontributors")
 }
 }
 \seealso{
-Other github: 
-\code{\link{get_gh_code_contributors}()},
-\code{\link{get_gh_contrib_issue}()},
-\code{\link{get_gh_issue_titles}()}
+Other github:
+\code{\link[=get_gh_code_contributors]{get_gh_code_contributors()}},
+\code{\link[=get_gh_contrib_issue]{get_gh_contrib_issue()}},
+\code{\link[=get_gh_issue_titles]{get_gh_issue_titles()}}
 }
 \concept{github}

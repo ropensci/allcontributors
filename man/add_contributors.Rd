@@ -106,7 +106,7 @@ add_contributors (repo = ".", files = f)
 }
 }
 \seealso{
-Other main: 
-\code{\link{get_contributors}()}
+Other main:
+\code{\link[=get_contributors]{get_contributors()}}
 }
 \concept{main}
