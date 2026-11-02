@@ -7,13 +7,13 @@
   "codeRepository": "https://github.com/ropensci/allcontributors",
   "issueTracker": "https://github.com/ropensci/allcontributors/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.2.3.010",
+  "version": "0.2.3.11",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.4.1 (2024-06-14)",
+  "runtimePlatform": "R version 4.6.2 (2026-10-29)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -25,7 +25,8 @@
       "@type": "Person",
       "givenName": "Mark",
       "familyName": "Padgham",
-      "email": "mark.padgham@email.com"
+      "email": "mark.padgham@email.com",
+      "@id": "https://orcid.org/0000-0003-2172-5265"
     },
     {
       "@type": "Person",
@@ -45,7 +46,8 @@
       "@type": "Person",
       "givenName": "Mark",
       "familyName": "Padgham",
-      "email": "mark.padgham@email.com"
+      "email": "mark.padgham@email.com",
+      "@id": "https://orcid.org/0000-0003-2172-5265"
     }
   ],
   "softwareSuggestions": [
@@ -183,15 +185,12 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=magrittr"
     },
-    "SystemRequirements": {}
+    "SystemRequirements": null
   },
-  "fileSize": "161.376KB",
-  "releaseNotes": "https://github.com/ropensci/allcontributors/blob/master/NEWS.md",
+  "fileSize": "208.802KB",
+  "releaseNotes": "https://github.com/ropensci/allcontributors/blob/main/NEWS.md",
   "readme": "https://github.com/ropensci/allcontributors/blob/main/README.md",
-  "contIntegration": [
-    "https://github.com/ropensci/allcontributors/actions?query=workflow%3AR-CMD-check",
-    "https://app.codecov.io/gh/ropensci/allcontributors"
-  ],
+  "contIntegration": ["https://github.com/ropensci/allcontributors/actions/workflows/R-CMD-check.yaml", "https://app.codecov.io/gh/ropensci/allcontributors"],
   "developmentStatus": "https://www.repostatus.org/#active",
   "relatedLink": "https://CRAN.R-project.org/package=allcontributors"
 }

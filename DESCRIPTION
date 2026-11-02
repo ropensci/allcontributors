@@ -1,8 +1,9 @@
 Package: allcontributors
 Title: Acknowledge all Contributors to a Project
-Version: 0.2.3.010
+Version: 0.2.3.011
 Authors@R: c(
-    person("Mark", "Padgham", , "mark.padgham@email.com", role = c("aut", "cre")),
+    person("Mark", "Padgham", , "mark.padgham@email.com", role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0003-2172-5265")),
     person("Chris", "Hartgerink", role = "aut"),
     person("Maëlle", "Salmon", role = "ctb")
     )
