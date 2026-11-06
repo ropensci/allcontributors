@@ -5,11 +5,11 @@ all: help
 doc: ## Update package documentation with `roxygen2`
 	Rscript -e "roxygen2::roxygenise()"; \
 
-knith: $(RFILE).Rmd ## Render README as HTML
-	echo "rmarkdown::render('$(RFILE).Rmd',output_file='$(RFILE).html')" | R --no-save -q
+knith: $(RFILE)-src.Rmd ## Render README as HTML
+	echo "rmarkdown::render('$(RFILE)-src.Rmd',output_file='$(RFILE).html')" | R --no-save -q
 
-knitr: $(RFILE).Rmd ## Render README as markdown
-	echo "rmarkdown::render('$(RFILE).Rmd',output_file='$(RFILE).md',output_format='github_document')" | R --no-save -q
+knitr: $(RFILE)-src.Rmd ## Render README as markdown
+	echo "rmarkdown::render('$(RFILE)-src.Rmd',output_file='$(RFILE).md',output_format='github_document')" | R --no-save -q
 
 allcon: ## Run 'allcontributors::add_contributors'
 	Rscript -e 'allcontributors::add_contributors()'
